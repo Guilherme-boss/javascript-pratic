@@ -1,0 +1,23 @@
+# javascript-pratic
+
+const forma = " quadrado";
+const altura = 15;
+const comprimento = 5;
+let area 
+
+if ( forma === " quadrado"){
+    area = altura * comprimento;
+}else{
+    (altura * comprimento)/2
+
+}
+console.log( area)
+
+
+
+let numero = 3
+let texto = " pitter";
+
+console.log(typeof numero)
+console.log(typeof texto)
+
