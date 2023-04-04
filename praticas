@@ -44,3 +44,22 @@ console.log(typeof texto)
                 <p id="res"> Resposta</p>
             </body>
         </head>
+        
+         class retangulo{
+                    constructor(base,altura){
+                        this.a = altura;
+                        this.b = base;
+
+                    }
+                        calcularArea(){
+                            return this.a * this.b;
+                        }
+                            calcularperimetro (){
+                                return (2* this.a + 2 * this.b);
+
+                            }
+
+                  }
+                  var ret1 = new retangulo(12,20);
+                  document.write ("a area é igual a " + ret1.calcularArea)
+                  document.write(" o perimetro é igual a " + ret1.calcularperimetro(+"<br>"))
