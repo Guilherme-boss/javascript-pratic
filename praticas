@@ -21,3 +21,26 @@ let texto = " pitter";
 console.log(typeof numero)
 console.log(typeof texto)
 
+
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <body>
+                <script>
+                    
+                    function Soma() {
+                    var e1 = parseInt(document.getElementById("v1").value);
+                    var e2 = parseInt(document.getElementById("v2").value);
+                    var S = e1 + e2;
+                    document.getElementById("res").innerHTML = "O valor da soma é:  <b><font color = #00FF00>" + S + "</font>.<b/>";
+                    }   
+                </script>
+
+                <p>Digite dois numeros: </p>
+                <input type= "text" id = "v1">
+                <br><br>
+                <input type= "text" id = "v2">
+                <button type="button" onclick="Soma()">SOMAR</button>
+                <p id="res"> Resposta</p>
+            </body>
+        </head>
