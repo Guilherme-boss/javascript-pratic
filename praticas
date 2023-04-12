@@ -63,3 +63,22 @@ console.log(typeof texto)
                   var ret1 = new retangulo(12,20);
                   document.write ("a area é igual a " + ret1.calcularArea)
                   document.write(" o perimetro é igual a " + ret1.calcularperimetro(+"<br>"))
+                  
+                  
+                  
+     
+    LIVRO MAIS BARATO
+    
+    
+    const precoslivros = [25,15,30,50,45,20];
+
+let maisbarato = 0
+
+for (let atual = 0; atual < precoslivros.length;atual ++){
+    if ( precoslivros[atual] < precoslivros[maisbarato]){
+        maisbarato = atual
+    }
+}
+console.log(`o livro maiss barato custa ${precoslivros[maisbarato]}`)
+
+
