@@ -196,6 +196,33 @@ if(listadealunosemedias[0].includes(alunos)){
     console.log("aluno não encontrado!")
 }
 }
+exibirnomeenome("joao")
+
+
+melhorado ---
+
+const alunos = ["joao","juliana","ana","caio"];
+const medias = [10,8,7.5,9];
+
+const listadealunosemedias = [alunos,medias];
+
+function exibenomeenota(alunos){
+
+if(listadealunosemedias[0].includes(alunos)){
+
+    const [alunos,medias] = listadealunosemedias;
+
+    const indice = alunos.indexOf(alunos);
+    
+    const mediadolauno  = medias[indice];
+
+    console.log(`${alunos} tem a media ${mediadolauno}`);
+}else{
+    console.log("aluno não encontrado!");
+}
+}
+exibenomeenota("joao");
+
 
 
 
