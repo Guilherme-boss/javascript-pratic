@@ -145,7 +145,7 @@ console.log(sala2)
 ------------------------------------------------------------------------------------------------------
 
 
-splice = juntar
+splice = adicionar ou remover
 
 const nomes = [ "joao","ana","caio","leo","lara","felipe"];
 
