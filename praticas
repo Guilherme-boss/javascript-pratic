@@ -106,3 +106,16 @@ const media = (notas[0]+[1]+[2]+[3]) / notas.length;
 console.log(media)
 
 
+const notas = [10, 6 , 8];
+
+const media = (notas[0] + notas[1] + notas[2])/ notas.length
+console.log(media)
+
+
+// usando push 
+const notas = [10, 6 , 8];
+
+notas.push(7)  // push é para inserir arrey uma nova nota
+
+const media = (notas[0] + notas[1] + notas[2]+ notas[3])/ notas.length
+console.log(media)
