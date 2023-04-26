@@ -168,7 +168,18 @@ const salapy = ["fernando","mateus","pedro"];
 const salasuni = salapy.concat(salajs);
 console.log(salasuni)
 
+---------------------------------------------------------------------------
 
+const alunos = ["joao","juliana","ana","caio"];
+const medias = [10,8,7.5,9];
+
+const listadealunosemedias = [alunos,medias];
+console.log(
+    `A aluna da posição 1 da lista de alunos é: ${listadealunosemedias[0][1]}
+A nota desse aluna é ${listadealunosemedias[1][1]}
+`
+
+);
 
 
 
