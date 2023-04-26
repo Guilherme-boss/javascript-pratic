@@ -94,3 +94,15 @@ const media = (nota1 + nota2 + nota3 + nota4)/4;
 console.log(media);
 
 
+
+
+//const ota1 = 10;
+//const notna2 = 8;
+//onst nota3 = 5;
+//const nota4 = 6;
+
+const notas = [10, 6.5 , 8, 7.5];
+const media = (notas[0]+[1]+[2]+[3]) / notas.length;
+console.log(media)
+
+
