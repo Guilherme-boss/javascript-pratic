@@ -142,3 +142,24 @@ console.log(sala1)
 const sala2 = alunos.slice(alunos.length/2)
 console.log(sala2)
 
+------------------------------------------------------------------------------------------------------
+
+
+splice = juntar
+
+const nomes = [ "joao","ana","caio","leo","lara","felipe"];
+
+nomes.splice(1,2,"rodrigo");
+
+console.log(nomes)
+
+ou 
+const nomes = [ "joao","ana","caio","leo","lara","felipe"];
+
+nomes.splice(1,2);
+nomem push("redrigo")
+
+console.log(nomes)
+
+
+
