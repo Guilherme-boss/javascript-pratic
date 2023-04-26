@@ -180,7 +180,22 @@ A nota desse aluna é ${listadealunosemedias[1][1]}
 `
 
 );
+  =========================================================================================
+  
+  procurando aluno 
+  
+  const alunos = ["joao","juliana","ana","caio"];
+const medias = [10,8,7.5,9];
 
+const listadealunosemedias = [alunos,medias];
+
+function exibenomeenota(alunos){
+if(listadealunosemedias[0].includes(alunos)){
+    console.log(`${aluno}esta cadastrado!`)
+}else{
+    console.log("aluno não encontrado!")
+}
+}
 
 
 
