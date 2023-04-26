@@ -132,4 +132,13 @@ notas.pop ()
 const media = (notas[0] + notas[1] + notas[2]+ notas[3])/ notas.length
 
 console.log(`a media é ${media}`)
+----------------------------------------------------------------------------------------
+slice dividri nomes ou dividir....
+
+const alunos = [ "ana","caio","lara","guilherme","julia","ramon","flavio","joao","carla","pedro","roger","augusto","fabio","gal","vinicius","carlos","bia"];
+
+const sala1 = alunos.slice(0,alunos.length/2)
+console.log(sala1)
+const sala2 = alunos.slice(alunos.length/2)
+console.log(sala2)
 
