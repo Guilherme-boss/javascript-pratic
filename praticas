@@ -160,6 +160,16 @@ nomes.splice(1,2);
 nomem push("redrigo")
 
 console.log(nomes)
+---------------------------------------------------------------
+concat
+const salajs = ["felipe","julio","guilherme"];
+const salapy = ["fernando","mateus","pedro"];
+
+const salasuni = salapy.concat(salajs);
+console.log(salasuni)
+
+
+
 
 
 
