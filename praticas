@@ -223,6 +223,68 @@ if(listadealunosemedias[0].includes(alunos)){
 }
 exibenomeenota("joao");
 
+----------------------------------------------------------------------------------------------
 
+Imprima o indice e a lista com os seguintes numeros 100, 200 , 300 , 400, 500 , 600
+
+const numeros = [100,200,300,400,500,600];
+
+for(let indice = 0; indice < numeros.length; indice++){
+console.log(numeros[indice]);
+}
+
+-----------------------------------------------------------------------------------
+
+//media for 
+
+const notas = [10, 6.5 , 8, 7.5];
+
+let somadasnotas = 0;
+
+for(let indice = 0; indice < notas.length;indice++){
+    somadasnotas += notas[i];
+}
+const media = somadasnotas/ notas.length;
+
+console.log(`a media é: ${media}`);
+ ---------------------------------------------------------------
+ 
+ calculando media entre seguintes notas usando o ForEath
+ 10,6.5,8,7.5
+ 
+ const notas = [10,6.5,8,7.5];
+
+somasdasnotas = 0;
+
+notas.forEach(function(nota){
+somasdasnotas += notas;
+})
+
+
+const media = somasdasnotas / notas.length;
+console.log(`a media é:${media}`)
+
+=--------------------------------------------------
+usando map = 
+const notas = [10,6.5,8,7.5];
+
+
+const notasatualizadas = notas.map((nota)=> {
+return nota + 1 >= 10 ? 10: nota +1;
+}); 
+
+console.log(notasatualizadas);
+=-==============-==========================================-==
+nomes padronizados
+
+const nomes = ['ana','caio vinicius', ' BIA silva'];
+
+const nomespadrao = nomes.map((nome)=>{
+    return nome.toUpperCase();
+})
+
+console.log ( nomespadrao);
+
+============================================================
 
 
