@@ -22,28 +22,6 @@ console.log(typeof numero)
 console.log(typeof texto)
 
 
-<DOCTYPE HTML>
-    <html>
-        <head>
-            <body>
-                <script>
-                    
-                    function Soma() {
-                    var e1 = parseInt(document.getElementById("v1").value);
-                    var e2 = parseInt(document.getElementById("v2").value);
-                    var S = e1 + e2;
-                    document.getElementById("res").innerHTML = "O valor da soma é:  <b><font color = #00FF00>" + S + "</font>.<b/>";
-                    }   
-                </script>
-
-                <p>Digite dois numeros: </p>
-                <input type= "text" id = "v1">
-                <br><br>
-                <input type= "text" id = "v2">
-                <button type="button" onclick="Soma()">SOMAR</button>
-                <p id="res"> Resposta</p>
-            </body>
-        </head>
         
          class retangulo{
                     constructor(base,altura){
@@ -286,5 +264,55 @@ const nomespadrao = nomes.map((nome)=>{
 console.log ( nomespadrao);
 
 ============================================================
+// depois de calucar a media do aluno preciasa saber quem foram resprovados 
+
+
+const alunos = [ "ana", "marcos","maria","mauro"];
+const medias = [ 7 , 4.5 , 8,7,.5];
+
+const reprovados = alunos.filter((aluno, indice)=>{
+    return medias[indice] < 7;
+
+})
+console.log(reprovados)
+------------------------------------------------------------------------------
+qual é a media de todos os alunos de cada 3 salas, calcule a media geral de cada sala.
+
+const salajs = [7,8,8,7,10,65,4,10,7];
+const salajava = [6,5,8,9,5,6];
+const salapython = [7,3.5,8,9.5];
+
+function calculamedia(notasdasala){
+    const somadasnotas = notasdasala.reduce((acumulador,nota)=>{
+        return acumulador + nota;
+    }, 0);
+    const media = somadasnotas/notasdasala.length;
+    return media;
+}
+
+console.log(`a media da sala de javascript é ${calculamedia(salajs)}`);
+console.log(`a media da sala de python é ${calculamedia(salapython)}`);
+console.log(`a media da sala de java é ${calculamedia(salajava)}`);
+----------------------------------------------------------------------------------
+adicionando notas sem altarar o array original
+const notas = [ 7,7,8,9,];
+
+const novasnotas = [...notas];
+
+novasnotas.push(10);
+
+console.log(`as novas notas são ${novasnotas}`);
+console.log(`as novas originais são ${notas}`);
+
+---------------------------------------------------------------------------------
+removendo nomes repetidos
+
+
+const nome =  ['ana','guilherme','pedro','helio','joao','joao','joao'];
+
+const nomesatualizados = [...new Set(nome)];
+
+
+console.log ( nomesatualizados);
 
 
