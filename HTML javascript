@@ -1,1 +1,27 @@
+joguinho de adivinhar
+
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }   
+        var numeropensado = Math.round(Math.random()*10);
+        var numero = parseInt(prompt("Digite um numero"));
+
+        if(numero==numeropensado){
+            mostra("parabéns,você acertou");
+        } else{
+            mostra("você errou,o numero foi: " + numeropensado);
+        }
+
+        
+</script>   
+
 
