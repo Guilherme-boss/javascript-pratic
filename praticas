@@ -315,4 +315,37 @@ const nomesatualizados = [...new Set(nome)];
 
 console.log ( nomesatualizados);
 
+---------------------------------------------------------------------------------------
+
+objetos javascript 
+const cliente = {
+    nome:'guilherme',
+    idade: 21,
+    cidade: 'Brasilia',
+    cpf: "12345634212",
+};
+
+console.log(`o nome do cliente é ${cliente.nome} e sua idade é de ${cliente.idade} anos, e ele mora em ${cliente.cidade}, seu cpf é
+ ${cliente.cpf}`);
+
+ console.log(`os 3 primeiras digitos do cpf é:${cliente.cpf.substring(0,3)}`);
+ 
+ ---------------------------------------------------------------------------------------------
+ acessando com colchetes acessar propriedade sem saber (forEach) 
+ const cliente = {
+    nome:'guilherme',
+    idade: 21,
+    cidade: 'Brasilia',
+    cpf: "12345634212",
+};
+
+console.log(`o nome do cliente é ${cliente["nome"]} e sua idade é de ${cliente["idade"]} anos, e ele mora em ${cliente["cidade"]}, seu cpf é
+ ${cliente.cpf}`);
+
+const chaves = [ "nome","idade","cidade","cpf"];
+
+chaves.forEach((chaves)=>{
+    console.log(`a chave ${chaves} tem valor ${cliente[chaves]}`);
+})
+ 
 
