@@ -347,5 +347,36 @@ const chaves = [ "nome","idade","cidade","cpf"];
 chaves.forEach((chaves)=>{
     console.log(`a chave ${chaves} tem valor ${cliente[chaves]}`);
 })
- 
+
+----------------------------------------------------------------------------------------------------------
+usando push e filter 
+const cliente = {
+    nome:"guilherme",
+    idade: 21,
+    email:"guis@gmail.com",
+    telenone:"1231231221",
+}
+cliente.enderecos = [
+    {
+    rua: "rua123",
+    numero:123,
+    apartamento: true,
+    complemento:"ap 12",
+},
+];
+cliente.enderecos.push({
+    rua: "rua lima",
+    numero:343,
+    apartamento: false,
+});
+
+const listaapartamentos = cliente.enderecos.filter(
+    (enderecos) => enderecos.apartamento === true
+);
+
+console.log(listaapartamentos);
+´-----------------------------------------------------------------------------------------
+
+
+
 
