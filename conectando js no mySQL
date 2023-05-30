@@ -1,1 +1,97 @@
+{
+  "name": "nova-pastajs",
+  "version": "1.0.5",
+  "description": "aula hoje",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Guilherme-Boss"
+  },
+  "author": "Guilherme",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.3"
+  }
+}
 
+var mysql = require('mysql2');
+
+var con = mysql.createConnection({  // dados de conexão.//
+    host: "localhost",
+    user:"root",
+    password: "c@tolic@",
+    database: "aula3005"
+});
+con.connect(
+    function(err){
+        if (err)throw err;
+            console.log("Conexão bem sucedida!");
+            var SQL = "select * from agenda;"
+
+                con.query(SQL,function(err,result){
+                if(err) throw err;
+                console.log("dados da tabela");
+                result.forEach(
+                    (row) => {
+                        console.log(row);
+                        
+                    }
+
+                    
+                );
+
+
+
+            });
+        }
+);
+
+//con.end();
+
+var mysql = require('mysql2');
+
+var con = mysql.createConnection({  // dados de conexão.//
+    host: "localhost",
+    user:"root",
+    password: "c@tolic@",
+    database: "aula3005"
+});
+con.connect(
+    function(err){
+        if (err)throw err;
+            console.log("Conexão bem sucedida!");
+
+            var SQL = "CREATE TABLE agenda (nome VARCHAR(255),endereco VARCHAR(255));";
+            con.query(SQL,function(err,result){
+                if(err) throw err;
+                console.log("Tabela agenda (nome,endereco) criada com sucsso!");
+
+
+
+            });
+        }
+);
+
+//con.end();
+
+
+var mysql = require('mysql2');
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user:"root",
+    password: "c@tolic@"
+});
+con.connect(
+    function(err){
+        if (err)throw err;
+            console.log("Conexão bem sucedida!");
+        }
+);
+
+con.end();
